@@ -1,0 +1,11 @@
+name: "MoJ Cloud Platform Authentication Action"
+description: "Authenticate with MoJ Cloud Platform Kubernetes namespace"
+branding:
+  icon: 'anchor'
+  color: 'blue'
+outputs:
+  result:
+    description: "Output of the kubectl command run"
+runs:
+  using: "docker"
+  image: "Dockerfile"
