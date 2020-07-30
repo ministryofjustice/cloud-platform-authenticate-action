@@ -4,6 +4,12 @@ branding:
   icon: 'anchor'
   color: 'blue'
 outputs:
+  aws_access_key_id:
+    description: "AWS access key ID"
+  aws_secret_access_key_id:
+    description: "AWS secret access key ID"
+  ecr_repo_url:
+    description: "AWS ECR Repo URL"
   result:
     description: "Output of the kubectl command run"
 runs:
