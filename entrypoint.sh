@@ -14,6 +14,10 @@ echo ::set-output name=aws_access_key_id::$AWS_ACCESS_KEY_ID
 echo ::set-output name=aws_secret_access_key::$AWS_SECRET_ACCESS_KEY
 echo ::set-output name=ecr_repo_url::$ECR_REPO_URL
 
+echo ::add-mask::${AWS_ACCESS_KEY_ID}
+echo ::add-mask::${AWS_SECRET_ACCESS_KEY}
+echo ::add-mask::${ECR_REPO_URL}
+
 result="$(kubectl $1)"
 
 status=$?
